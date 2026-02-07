@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1967 RML Routemaster Fish & Chip Bus | Institutional Sale</title>
+  <meta name="description" content="A fully restored 1967 RML Routemaster fish & chip bus offered for serious institutional acquisition. Heritage catering asset for estates, attractions and premium venues." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --heritage-red: #c8102e;
+      --deep-charcoal: #111111;
+      --warm-ivory: #f4f1ec;
+      --muted-gold: #d4b24c; /* richer heritage gold */
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--warm-ivory);
+      color: var(--deep-charcoal);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.3px;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      margin-bottom: 1.25rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--heritage-red);
+      margin-top: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin: 2.5rem 0 1rem 0;
+      color: #111111;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('images/front.jpg') center/cover no-repeat;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 2rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+      margin-bottom: 1.25rem;
+      color: #ffffff;
+      
+    }
+
+    
+
+    .hero p {
+      max-width: 650px;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #eaeaea;
+    }
+
+    .hero .cta {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      border: 2px solid var(--heritage-red);
+      color: var(--heritage-red);
+      font-weight: 500;
+      background: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    .hero .cta:hover {
+      background: #ffffff;
+      color: #111111;
+      border-color: #ffffff;
+    }
+
+    .hero .cta:hover {
+      background: var(--muted-gold);
+      color: var(--deep-charcoal);
+    }
+
+    section {
+      padding: 5rem 0;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .image-frame {
+      background: #ddd;
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.25rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      color: var(--heritage-red);
+      border-bottom: 2px solid var(--heritage-red);
+    }
+
+    /* Hero badge override for visibility */
+    header .badge {
+      background: rgba(255,255,255,0.9);
+      padding: 0.5rem 0.75rem;
+      border: 2px solid var(--heritage-red);
+      color: #111111;
+    }
+
+    .use-cases {
+      background: #fff;
+    }
+
+    .use-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .use-card {
+      border: 1px solid #e2e2e2;
+      padding: 2rem;
+      background: #fff;
+    }
+
+    .specs {
+      background: #f4f1ec; /* warm paper tone */
+      color: #111111;
+    }
+
+    .specs ul {
+      list-style: none;
+      columns: 2;
+      column-gap: 3rem;
+    }
+
+    .specs li {
+      margin-bottom: 0.8rem;
+    }
+
+    .gallery {
+      background: #fff;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 3rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 2px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
+
+    .price-note {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      font-weight: 500;
+    }
+
+    footer {
+      background: #ede9e2;
+      color: #333333;
+      padding: 4rem 0;
+      font-size: 1rem;
+    }
+
+    footer form {
+      max-width: 500px;
+      margin-top: 2rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #b5b5b5;
+      font-family: inherit;
+      font-size: 1rem;
+      outline: none;
+      background: #ffffff;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #111111;
+      box-shadow: none;
+    }
+
+    button {
+      padding: 1.1rem 3rem;
+      background: var(--heritage-red);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      font-size: 1.05rem;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 700px) {
+      .specs ul {
+        columns: 1;
+      }
+    }
+
+    #lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(244,241,236,0.96); /* warm London Transport paper tone */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+      z-index: 9999;
+    }
+
+    #lightbox.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #lightbox.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #lightbox img {
+      max-width: 85%;
+      max-height: 85%;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+      border: 6px solid #ffffff;
+      background: #ffffff;
+    }
+
+    #lightbox .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3rem;
+      color: #c8102e; /* London Transport red */
+      cursor: pointer;
+      padding: 0 1rem;
+      user-select: none;
+      opacity: 0.8;
+    }
+
+    #lightbox .nav:hover {
+      opacity: 1;
+    }
+
+    #lightbox .prev { left: 2%; }
+    #lightbox .next { right: 2%; }
+
+    #lightbox .nav:hover {
+      opacity: 1;
+    }
+
+    #lightbox .prev { left: 2%; }
+    #lightbox .next { right: 2%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container hero">
+    
+    <h1><span class="hero-title">1967 RML Routemaster</span><br>Fish & Chip Bus</h1>
+    <p>An exceptionally rare, operational heritage catering vehicle. A fully restored extended‑length Routemaster offering immediate commercial deployment with iconic British presence.</p>
+    <a href="#enquire" class="cta">Request Information</a>
+  </div>
+</header>
+
+<section>
+  <div class="container two-col">
+    <div>
+      <span class="badge">Heritage Provenance</span>
+      <h2>A Landmark Mobile Asset</h2>
+      <p>This 1967 RML Routemaster represents a unique intersection of transport history and premium food service infrastructure. Converted and maintained to a professional standard, the vehicle operates as a fully self‑contained fish & chip kitchen while retaining its unmistakable period character.</p>
+      <p>Opportunities to acquire extended‑length RML models in operational catering configuration are exceptionally limited.</p>
+    </div>
+    <img src="images/left-side.jpg" alt="1967 Routemaster exterior side view" style="width:100%; height:auto; border-radius:2px;" />
+  </div>
+</section>
+
+<section class="use-cases">
+  <div class="container">
+    <span class="badge">Ideal For</span>
+    <h2>Institutional & Commercial Use Cases</h2>
+    <div class="use-grid">
+      <div class="use-card">Heritage estates & stately homes</div>
+      <div class="use-card">Visitor attractions & museums</div>
+      <div class="use-card">Breweries & destination food venues</div>
+      <div class="use-card">Luxury resorts & hotels</div>
+      <div class="use-card">Wedding & private event operators</div>
+      <div class="use-card">Major festivals & seasonal markets</div>
+    </div>
+  </div>
+</section>
+
+<section class="specs">
+  <div class="container">
+    <span class="badge">Included in the Sale</span>
+    <h2>Vehicle, Catering & On-Board Equipment</h2>
+
+    <p style="font-size:1.1rem; font-weight:600; max-width:900px; margin-bottom:2.5rem;">A unique vintage 1967 Routemaster bus professionally converted into a fully operational fish & chip shop with an upstairs 28-seat restaurant. Retaining original London Transport fittings wherever possible, this vehicle combines historic authenticity with proven high‑volume commercial capability and is offered ready for immediate deployment.</p>
+
+    <h3>Upper Deck – Restaurant & Systems</h3>
+    <table class="spec-table">
+      <thead>
+        <tr><th>Category</th><th>Specification Included</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Seating & Dining</td><td>28 original Routemaster seats with 8 dining tables</td></tr>
+        <tr><td>Interior</td><td>Original Routemaster interior fittings retained</td></tr>
+        <tr><td>Generator</td><td>8kW Cummins Onan generator housed in a dedicated sound‑proofed cabinet</td></tr>
+        <tr><td>Extractor System</td><td>Extractor fan integrated with generator installation</td></tr>
+        <tr><td>Storage</td><td>Dedicated cutlery and condiment storage area with spill‑guard rail</td></tr>
+        <tr><td>Heating</td><td>Electric 2kW saloon fan heater (currently not operational)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Lower Deck – Catering & Service</h3>
+    <table class="spec-table">
+      <thead>
+        <tr><th>Category</th><th>Specification Included</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Frying Range</td><td>Preston & Thomas large 3‑pan range with heated chip box and heated top boxes</td></tr>
+        <tr><td>Cooking Equipment</td><td>2‑ring gas hob, commercial griddle and 6‑pot bain‑marie</td></tr>
+        <tr><td>Ventilation</td><td>Integrated cooking and fume extraction system with powerful fan</td></tr>
+        <tr><td>Plumbing</td><td>Double sink with hot & cold water and professional LED water heater (£820)</td></tr>
+        <tr><td>Refrigeration</td><td>Fridge and drinks chiller</td></tr>
+        <tr><td>Serving Hatch</td><td>External serving hatch converted from original emergency‑exit window</td></tr>
+        <tr><td>Security</td><td>Removable night security door</td></tr>
+        <tr><td>Seating</td><td>Original twin bench seating retained</td></tr>
+        <tr><td>Original Features</td><td>Original pull‑rope conductor’s bell retained</td></tr>
+        <tr><td>Audio & Monitoring</td><td>Sony radio / MP3 / Bluetooth system with speakers on both decks and downstairs monitor for top‑deck activity</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Power, Utilities & Ancillary Equipment</h3>
+    <table class="spec-table">
+      <thead>
+        <tr><th>Category</th><th>Specification Included</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Electrical</td><td>Mains / generator changeover switch and consumer unit fitted (may require servicing and testing)</td></tr>
+        <tr><td>Heating</td><td>Eberspacher diesel heater (currently not operational)</td></tr>
+        <tr><td>Fuel Systems</td><td>Separate 24V and 12V battery systems with 110‑litre underfloor red diesel tank</td></tr>
+        <tr><td>Awning</td><td>3‑metre electrically operated awning with five integrated LED downlights</td></tr>
+        <tr><td>External Power</td><td>Two 16A external power inlet sockets</td></tr>
+        <tr><td>Gas Storage</td><td>Double‑door gas compartment housing two 47kg propane bottles</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Road Gear & Mechanical</h3>
+    <table class="spec-table">
+      <thead>
+        <tr><th>Category</th><th>Specification Included</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Engine</td><td>Cummins C3 8.3‑litre diesel engine</td></tr>
+        <tr><td>Transmission</td><td>Semi‑automatic gearbox (third‑gear issue currently present)</td></tr>
+        <tr><td>Steering</td><td>Power steering</td></tr>
+        <tr><td>Service History</td><td>Regularly serviced by Routemaster specialists; service history available</td></tr>
+        <tr><td>Recent Work</td><td>New brake accumulators recently fitted</td></tr>
+        <tr><td>Regulatory</td><td>No MOT required and tax‑exempt</td></tr>
+        <tr><td>Driver Aids</td><td>Reversing camera with dual views and in‑cab monitor</td></tr>
+        <tr><td>Towing</td><td>Towbar fitted</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<style>
+  .spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 3rem 0;
+    background: #ffffff;
+  }
+
+  .spec-table thead th {
+    background: #f0ede7;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid #d4b24c;
+  }
+
+  .spec-table td {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #e2e2e2;
+    vertical-align: top;
+  }
+
+  .spec-table td:first-child {
+    width: 32%;
+    font-weight: 500;
+    color: #333333;
+  }
+</style>
+
+<section class="gallery">
+  <div class="container">
+    <span class="badge">Visual Record</span>
+    <h2>Gallery</h2>
+    <div class="gallery-grid" id="gallery">
+      <img src="images/front.jpg" alt="Routemaster front three-quarter view" />
+      <img src="images/left-side.jpg" alt="Routemaster exterior left side" />
+      <img src="images/right-side.jpg" alt="Routemaster exterior right side" />
+      <img src="images/Batter.jpg" alt="Fish and chip batter" />
+      <img src="images/Cooking.jpg" alt="Fish and chip kitchen in operation" />
+      <img src="images/Curry-2.jpg" alt="Fish and chip kitchen in operation" />
+      <img src="images/Fryer-With-Son-Server.jpg" alt="Professional fryer station" />
+      <img src="images/Fish & Chips Ready to Serve.jpg" alt="Fish and chips ready to serve" />
+      <img src="images/Fish & Chips-2.jpg" alt="Traditional fish and chips" />
+      <img src="images/Upper-Deck-1.jpg" alt="Upper deck dining layout" />
+      <img src="images/Upper-Deck-2.jpg" alt="Upper deck seating" />
+      <img src="images/Upper-Deck-Table-Flower.jpg" alt="Upper deck table detail" />
+      <img src="images/Prices.jpg" alt="Prices on mobile fish and chip bus" />
+      <img src="images/Wedding-Guest-Ordering.jpg" alt="Wedding guest ordering at Routemaster" />
+      <img src="images/platform.jpg" alt="Platform on mobile fish and chip bus" />
+      <img src="images/chipman.jpg" alt="Chipman & wife on mobile fish and chip bus" />
+    </div>
+    <p class="price-note">Price available on request.</p>
+  </div>
+</section>
+
+<footer id="enquire">
+  <div class="container">
+    <span class="badge">Confidential Enquiries</span>
+    <h2>Enquiries & Viewings</h2>
+    <p>This website constitutes the full public information pack for the vehicle. Price, detailed operational documentation and viewing arrangements are provided confidentially following initial enquiry.</p>
+
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Organisation name" required>
+      <input type="text" placeholder="Contact name" required>
+      <input type="email" placeholder="Email address" required>
+      <textarea rows="4" placeholder="Intended use / enquiry"></textarea>
+      <button type="submit">Submit Enquiry</button>
+    </form>
+  </div>
+</footer>
+
+<script>
+  // Smooth scrolling for internal anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert('Thank you. Your enquiry has been received and will be reviewed confidentially.');
+  }
+
+  // Robust lightbox with navigation
+  document.addEventListener('DOMContentLoaded', () => {
+    const images = Array.from(document.querySelectorAll('.gallery-grid img'));
+    if (!images.length) return;
+
+    let currentIndex = 0;
+
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    lightbox.innerHTML = `
+      <span class="nav prev">&#10094;</span>
+      <img class="lightbox-image" alt="" />
+      <span class="nav next">&#10095;</span>
+    `;
+    document.body.appendChild(lightbox);
+
+    const lightboxImg = lightbox.querySelector('.lightbox-image');
+    const prevBtn = lightbox.querySelector('.prev');
+    const nextBtn = lightbox.querySelector('.next');
+
+    function openLightbox(index) {
+      currentIndex = index;
+      lightboxImg.src = images[currentIndex].getAttribute('src');
+      lightbox.classList.add('active');
+    }
+
+    function showNext() {
+      currentIndex = (currentIndex + 1) % images.length;
+      lightboxImg.src = images[currentIndex].getAttribute('src');
+    }
+
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      lightboxImg.src = images[currentIndex].getAttribute('src');
+    }
+
+    images.forEach((img, index) => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => openLightbox(index));
+    });
+
+    nextBtn.addEventListener('click', e => { e.stopPropagation(); showNext(); });
+    prevBtn.addEventListener('click', e => { e.stopPropagation(); showPrev(); });
+
+    lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'ArrowRight') showNext();
+      if (e.key === 'ArrowLeft') showPrev();
+      if (e.key === 'Escape') lightbox.classList.remove('active');
+    });
+  });
+</script>
+
+</body>
+</html>
