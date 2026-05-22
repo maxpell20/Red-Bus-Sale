@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- 1. PRIMARY META TAGS (Targeting buyers and investors) -->
+    <!-- PRIMARY META TAGS -->
     <title>For Sale: 1967 Routemaster Fish & Chip Bus | RML 2667</title>
     <meta name="title" content="For Sale: 1967 Routemaster Fish & Chip Bus | RML 2667" />
     <meta name="description" content="A rare opportunity to acquire a fully restored 1967 London Routemaster (RML 2667). Meticulously engineered into a turnkey Fish & Chip business with a commercial kitchen and 28-seat upper deck." />
@@ -12,11 +12,10 @@
     <meta name="author" content="The Fish & Chip Bus" />
     <meta name="robots" content="index, follow" />
     
-    <!-- 2. CANONICAL URL -->
+    <!-- CANONICAL URL -->
     <link rel="canonical" href="https://www.fishandchipbus.co.uk/" />
 
-    <!-- 3. OPEN GRAPH / FACEBOOK / LINKEDIN -->
-    <!-- Essential for when this is shared among business partners or investors -->
+    <!-- OPEN GRAPH / FACEBOOK / LINKEDIN -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.fishandchipbus.co.uk/" />
     <meta property="og:title" content="Acquisition Opportunity: 1967 Routemaster Fish & Chip Bus" />
@@ -24,20 +23,19 @@
     <meta property="og:image" content="https://www.fishandchipbus.co.uk/images/front.jpg" />
     <meta property="og:site_name" content="1967 Routemaster For Sale" />
 
-    <!-- 4. TWITTER CARDS -->
+    <!-- TWITTER CARDS -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://www.fishandchipbus.co.uk/" />
     <meta property="twitter:title" content="For Sale: 1967 Routemaster Fish & Chip Bus" />
     <meta property="twitter:description" content="A fully restored, MOT-exempt classic London Routemaster. Turnkey commercial kitchen and 28-seat dining suite. Enquire privately." />
     <meta property="twitter:image" content="https://www.fishandchipbus.co.uk/images/front.jpg" />
 
-    <!-- 5. FONTS -->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
 
-    <!-- 6. SCHEMA MARKUP (Product / Vehicle Sale) -->
-    <!-- This tells Google this is a high-value product/vehicle on the market, not a local restaurant. -->
+    <!-- SCHEMA MARKUP -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -60,9 +58,6 @@
     }
     </script>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
-
     <style>
         :root {
             --heritage-red: #8e1b20;
@@ -86,183 +81,54 @@
 
         h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; }
 
-        /* --- STATIC NAVIGATION --- */
-        nav {
-            position: absolute; /* No longer sticky */
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 40px 0;
-            background: transparent;
-        }
-
-        .nav-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 40px;
-        }
-
-        .nav-logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.1rem;
-            color: #fff;
-            text-decoration: none;
-            letter-spacing: 2px;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-
+        nav { position: absolute; top: 0; width: 100%; z-index: 1000; padding: 40px 0; background: transparent; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; }
+        .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: #fff; text-decoration: none; letter-spacing: 2px; font-weight: 400; text-transform: uppercase; }
         .nav-links { display: flex; gap: 40px; list-style: none; }
-        .nav-links a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            opacity: 0.8;
-            transition: var(--transition);
-        }
+        .nav-links a { text-decoration: none; color: #fff; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.8; transition: var(--transition); }
         .nav-links a:hover { opacity: 1; color: var(--prestige-gold); }
 
-        /* --- HERO SECTION --- */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('images/front.jpg') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            position: relative;
-            color: #fff;
-            padding: 0 10%;
-        }
-
+        .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('images/front.jpg') center/cover no-repeat; display: flex; align-items: center; position: relative; color: #fff; padding: 0 10%; }
         .hero-content { max-width: 900px; margin-top: 60px; }
-        
-        .hero-tag {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 8px;
-            color: var(--prestige-gold);
-            display: block;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .hero h1 {
-            font-size: clamp(3.5rem, 8vw, 6.5rem);
-            line-height: 1;
-            margin-bottom: 35px;
-            font-weight: 300;
-        }
-
-        .btn-main {
-            display: inline-block;
-            padding: 22px 50px;
-            background: var(--soft-white);
-            color: var(--charcoal);
-            text-decoration: none;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 600;
-            transition: var(--transition);
-        }
+        .hero-tag { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 8px; color: var(--prestige-gold); display: block; margin-bottom: 15px; font-weight: 600; }
+        .hero h1 { font-size: clamp(3.5rem, 8vw, 6.5rem); line-height: 1; margin-bottom: 35px; font-weight: 300; }
+        .btn-main { display: inline-block; padding: 22px 50px; background: var(--soft-white); color: var(--charcoal); text-decoration: none; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 600; transition: var(--transition); }
         .btn-main:hover { background: var(--prestige-gold); color: #fff; transform: translateY(-3px); }
 
-        /* --- CONTENT SECTIONS --- */
         section { padding: 140px 0; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-
-        .reveal-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-            margin-bottom: 100px;
-        }
-
+        .reveal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-bottom: 100px; }
         .reveal-text h2 { font-size: 3.5rem; color: var(--heritage-red); margin-bottom: 25px; }
         .reveal-text p { font-size: 1.15rem; font-weight: 300; color: #444; }
         .reveal-img img { width: 100%; border: 10px solid #fff; box-shadow: 0 30px 60px rgba(0,0,0,0.08); }
 
-        /* --- SPECS --- */
         .specs-section { background: #f4f2ee; }
         .spec-table { width: 100%; margin-top: 40px; }
-        
-        .spec-row { 
-            border-bottom: 1px solid #dcdad4; 
-            display: flex; 
-            justify-content: space-between; 
-            padding: 35px 0; 
-        }
-
+        .spec-row { border-bottom: 1px solid #dcdad4; display: flex; justify-content: space-between; padding: 35px 0; }
         .spec-label { font-weight: 600; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px; color: var(--prestige-gold); }
         .spec-value { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; text-align: right; line-height: 1.2; }
+        .refinement-note { background: #fff; padding: 30px; margin-top: 25px; border-left: 4px solid var(--prestige-gold); font-style: italic; font-size: 1rem; color: #666; line-height: 1.6; }
 
-        .refinement-note {
-            background: #fff;
-            padding: 30px;
-            margin-top: 25px;
-            border-left: 4px solid var(--prestige-gold);
-            font-style: italic;
-            font-size: 1rem;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* --- GALLERY --- */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 20px;
-        }
-        .gallery-thumb { height: 450px; overflow: hidden; cursor: pointer; }
+        /* GALLERY UPDATES */
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .gallery-thumb { height: 350px; overflow: hidden; cursor: pointer; }
         .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s ease; }
         .gallery-thumb:hover img { transform: scale(1.08); }
 
-        /* --- LIGHTBOX & GALLERY NAVIGATION --- */
-        #theater {
-            position: fixed; inset: 0; background: rgba(255,255,255,0.98);
-            z-index: 2000; display: none; flex-direction: column; align-items: center; justify-content: center;
-        }
+        #theater { position: fixed; inset: 0; background: rgba(255,255,255,0.98); z-index: 2000; display: none; flex-direction: column; align-items: center; justify-content: center; }
         #theater img { max-width: 85%; max-height: 80vh; box-shadow: 0 50px 100px rgba(0,0,0,0.1); }
-        
         .t-close { position: absolute; top: 30px; right: 40px; font-size: 3rem; cursor: pointer; font-weight: 200; z-index: 2100; }
-        
-        .t-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 3rem;
-            color: var(--charcoal);
-            cursor: pointer;
-            padding: 20px;
-            user-select: none;
-            transition: var(--transition);
-        }
+        .t-nav { position: absolute; top: 50%; transform: translateY(-50%); font-size: 3rem; color: var(--charcoal); cursor: pointer; padding: 20px; user-select: none; transition: var(--transition); }
         .t-nav:hover { color: var(--prestige-gold); }
         .t-prev { left: 20px; }
         .t-next { right: 20px; }
 
-        /* --- FOOTER --- */
         .contact-wrap { max-width: 800px; margin: 0 auto; }
         .contact-wrap h2 { font-size: 4rem; text-align: center; margin-bottom: 50px; }
-        
-        input, textarea {
-            width: 100%; padding: 25px; margin-bottom: 25px;
-            border: 1px solid #e0e0e0; background: #fff;
-            font-family: 'Montserrat', sans-serif; font-size: 1.1rem;
-        }
-        .submit-btn {
-            width: 100%; padding: 30px; background: var(--heritage-red);
-            color: #fff; border: none; text-transform: uppercase;
-            letter-spacing: 5px; font-weight: 600; cursor: pointer; transition: 0.3s;
-        }
+        input, textarea { width: 100%; padding: 25px; margin-bottom: 25px; border: 1px solid #e0e0e0; background: #fff; font-family: 'Montserrat', sans-serif; font-size: 1.1rem; }
+        .submit-btn { width: 100%; padding: 30px; background: var(--heritage-red); color: #fff; border: none; text-transform: uppercase; letter-spacing: 5px; font-weight: 600; cursor: pointer; transition: 0.3s; }
         .submit-btn:hover { background: var(--charcoal); }
 
-        /* --- MOBILE --- */
         @media (max-width: 768px) {
             .nav-container { padding: 0 20px; }
             .nav-links { display: none; }
@@ -270,6 +136,9 @@
             .reveal-grid { grid-template-columns: 1fr; gap: 40px; }
             .spec-row { flex-direction: column; text-align: left; padding: 35px 0; }
             .spec-value { text-align: left; margin-top: 10px; }
+            /* Mobile gallery - 2 columns */
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .gallery-thumb { height: 200px; }
         }
     </style>
 </head>
@@ -304,15 +173,10 @@
                     <h2>The Upper Deck</h2>
                     <p>Elevate your guests to the 28-seat dining suite. Meticulously restored to its 1967 glory, this space offers an atmospheric setting that perfectly complements heritage estates and private events.</p>
                 </div>
-                <div class="reveal-img">
-                    <img src="images/Upper-Deck-1.jpg" alt="Interior">
-                </div>
+                <div class="reveal-img"><img src="images/Upper-Deck-1.jpg" alt="Interior"></div>
             </div>
-
             <div class="reveal-grid">
-                <div class="reveal-img" style="order: 2;">
-                    <img src="images/Cooking.jpg" alt="Kitchen">
-                </div>
+                <div class="reveal-img" style="order: 2;"><img src="images/Cooking.jpg" alt="Kitchen"></div>
                 <div class="reveal-text" style="order: 1;">
                     <h2>Culinary Excellence</h2>
                     <p>Designed for professional service, the lower deck houses a full commercial kitchen with a Preston & Thomas 3-pan range, engineered for high-volume delivery.</p>
@@ -327,13 +191,11 @@
                 <span class="hero-tag" style="color: var(--charcoal);">Operational Portfolio</span>
                 <h2 style="font-size: 3rem; margin-top: 10px;">Engineering Integrity</h2>
             </div>
-
             <div class="spec-table">
                 <div class="spec-row">
                     <span class="spec-label">Engine</span>
-                    <span class="spec-value">Cummins C3 8.3-litre Turbo Diesel</span>
+                    <span class="spec-value">Cummins C3 8.3-litre Diesel</span>
                 </div>
-                
                 <div class="spec-row" style="display: block;">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
                         <span class="spec-label">Transmission</span>
@@ -343,12 +205,10 @@
                         <strong>Specialist Handover Clause:</strong> A dedicated Routemaster engineer has completed a preliminary inspection of the gear synchronization. This specialist remains retained for the final refinement; this can be completed prior to collection or the commission can be transferred to the new owner for completion.
                     </div>
                 </div>
-
                 <div class="spec-row">
                     <span class="spec-label">On-Board Power</span>
                     <span class="spec-value">8kW Cummins Onan Silent Generator</span>
                 </div>
-
                 <div class="spec-row">
                     <span class="spec-label">Compliance</span>
                     <span class="spec-value">MOT Exempt & Historic Vehicle Tax Status</span>
